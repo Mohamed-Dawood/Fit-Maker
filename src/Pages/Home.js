@@ -7,7 +7,7 @@ function Home() {
       <div className="container">
         <div className="text">
           <h1>
-            Achieve you <span>fitness goal</span> with fitMaker
+            Achieve your <span>fitness goal</span> with fitMaker
           </h1>
           <p>
             "Join the Fitmaker community and transform your fitness journey. Our
