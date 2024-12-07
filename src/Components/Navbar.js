@@ -17,19 +17,19 @@ function Navbar() {
       <Logo />
       <ul className={!isOpen ? 'open' : ''}>
         <li>
-          <a href="">Home</a>
+          <a href="/home">Home</a>
         </li>
         <li>
-          <a href="">Programs</a>
+          <a href="/program">Programs</a>
         </li>
         <li>
-          <a href="">Coaching</a>
+          <a href="/coaching">Coaching</a>
         </li>
         <li>
-          <a href="">Membership</a>
+          <a href="/membership">Membership</a>
         </li>
         <li>
-          <a href="">About Us</a>
+          <a href="/about us">About Us</a>
         </li>
       </ul>
       <div className="register">
