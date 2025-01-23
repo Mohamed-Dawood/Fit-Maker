@@ -1,42 +1,44 @@
 .navbar {
   padding: 1rem 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: relative; */
 
-ul {
-  display: flex;
-  gap: 1rem;
-  margin: 0;
+    ul {
+      display: flex;
+      gap: 1rem;
+      margin: 0;
 
-  li {
-    a {
-      color: #fff;
-      position: relative;
-      transition: var(--main-transition);
+      li {
+        a {
+          color: #fff;
+          position: relative;
+          transition: var(--main-transition);
 
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: -1rem;
-        left: 50%; /* Start at the center */
-        transform: translateX(-50%); /* Center the pseudo-element */
-        width: 0%; /* Start with no width */
-        height: 3px; /* Thickness of the "border" */
-        background: linear-gradient(
-          to right,
-          var(--secondary-color),
-          var(--main-color)
-        );
-        transition: var(
-          --main-transition
-        ); /* Smooth transition for the width */
-      }
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: -1rem;
+            left: 50%; /* Start at the center */
+            transform: translateX(-50%); /* Center the pseudo-element */
+            width: 0%; /* Start with no width */
+            height: 3px; /* Thickness of the "border" */
+            background: linear-gradient(
+              to right,
+              var(--secondary-color),
+              var(--main-color)
+            );
+            transition: var(
+              --main-transition
+            ); /* Smooth transition for the width */
+          }
 
-      &:hover::after {
-        width: 100%; /* Expand to full width */
+          &:hover::after {
+            width: 100%; /* Expand to full width */
+          }
+        }
       }
     }
   }
@@ -56,22 +58,26 @@ ul {
 }
 
 @media (max-width: 768.1px) {
+  .navbar {
+    .container {
+      ul {
+        display: none;
+        position: absolute;
+        background: gray;
+        flex-direction: column;
+        width: 100% !important;
+        left: 0;
+        top: 77px;
+        text-align: center;
+        padding: 1rem 0 !important;
+        li {
+          padding: 0.3rem;
+        }
+      }
+    }
+  }
   .register {
     display: none;
-  }
-  ul {
-    display: none;
-    position: absolute;
-    background: gray;
-    flex-direction: column;
-    width: 100% !important;
-    left: 0;
-    top: 77px;
-    text-align: center;
-    padding: 1rem 0 !important;
-    li {
-      padding: 0.3rem;
-    }
   }
 }
 @media (min-width: 768.1px) {
@@ -80,7 +86,7 @@ ul {
   }
 }
 .open {
-  display: flex;
+  display: flex !important;
 }
 .bars {
   border: 1px solid;

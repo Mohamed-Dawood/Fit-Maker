@@ -1,13 +1,13 @@
 import './App.css';
 import Navbar from './Components/Navbar';
+import Statistics from './Components/Statistics';
 import Home from './Pages/Home';
 function App() {
   return (
     <div className="App">
-      <div className="container">
-        <Navbar />
-        <Home />
-      </div>
+      <Navbar />
+      <Home />
+      <Statistics />
     </div>
   );
 }
