@@ -58,6 +58,21 @@ button {
   cursor: pointer;
 }
 .home,
-.statistics {
+.statistics,
+.utilities {
   padding: 2rem 0;
+}
+
+.section-header {
+  text-align: center;
+  h2 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    span {
+      color: var(--secondary-color);
+    }
+  }
+  p {
+    margin: 2rem 0 4rem;
+  }
 }
