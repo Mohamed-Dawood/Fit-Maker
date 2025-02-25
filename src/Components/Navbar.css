@@ -24,7 +24,7 @@
             left: 50%; /* Start at the center */
             transform: translateX(-50%); /* Center the pseudo-element */
             width: 0%; /* Start with no width */
-            height: 3px; /* Thickness of the "border" */
+            height: 5px; /* Thickness of the "border" */
             background: linear-gradient(
               to right,
               var(--secondary-color),

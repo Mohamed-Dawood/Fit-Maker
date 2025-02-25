@@ -15,8 +15,12 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #fff;
+  background-color: #281d1d;
 }
-
+::selection {
+  color: #fff;
+  background-color: var(--secondary-color);
+}
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -59,12 +63,15 @@ button {
 }
 .home,
 .statistics,
-.utilities {
+.utilities,
+.progress,
+.questions {
   padding: 2rem 0;
 }
 
 .section-header {
   text-align: center;
+  display: block;
   h2 {
     font-size: 2.5rem;
     text-transform: capitalize;

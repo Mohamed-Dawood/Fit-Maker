@@ -9,7 +9,6 @@ function Navbar() {
 
   function handleOpenNav() {
     setIsOpen(() => !isOpen);
-    console.log(isOpen);
   }
 
   return (
